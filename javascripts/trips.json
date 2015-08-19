@@ -1,0 +1,16 @@
+{
+	"trips": [
+    {
+      "location" : "test",
+      "location-type": "city",
+      "visited": false,
+      "reviews": [
+        {
+      	  "date" : "now",
+      	  "text" : "great trip",
+      	  "title": "First Time around"
+      	}
+      ] 
+    }
+  ]
+}
