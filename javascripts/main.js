@@ -1,4 +1,3 @@
-console.log("hello world");
 requirejs.config({
   baseUrl: './javascripts',
   paths: {
@@ -15,8 +14,8 @@ requirejs.config({
   }
 });
 
-requirejs(["dependencies", "load-data"],
-  function(dependencies, loadData) {
-
+requirejs(["dependencies", "load-data", "save-data", "reviews"],
+  function(dependencies, loadData, saveData, reviews) {
+    $(".review-entry").css({ display: "block" });
   }
 );  
