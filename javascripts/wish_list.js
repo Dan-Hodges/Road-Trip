@@ -8,6 +8,9 @@ define(function(require){
 
   myFirebseRef.child("trips").on("value", function(snapshot){
     var trips = snapshot.val();
+    for(var i in trips) {
+      trips[i].key = i;
+    }
     var wishList =_.filter(trips, {'visited': false });
     console.log("wishList :", wishList);
 

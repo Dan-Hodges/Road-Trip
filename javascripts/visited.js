@@ -8,7 +8,11 @@ define(function(require){
 
   myFirebseRef.child("trips").on("value", function(snapshot){
     var trips = snapshot.val();
-    var visited =_.filter(trips, {'visited': true });
+    for(var i in trips) {
+      trips[i].key = i;
+    }
+    console.log("trips :", trips);
+    var visited =_.filter(trips, {'visited': true});
     console.log("visited :", visited);
 
     $('#visitedBtn').click(function(){

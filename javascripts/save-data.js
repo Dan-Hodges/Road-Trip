@@ -1,6 +1,6 @@
 define(function(require){
 	var $ = require("jquery");
-
+  var _ = require("lodash");
 	var visited = false;
 
 	$("#visited").click(function(){
