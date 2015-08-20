@@ -12,12 +12,14 @@ define(function (require){
 	$("#save-review").click(function() {
 		console.log("click");
 		var tripRef = new Firebase('https://dans-trippin.firebaseio.com/trips/' + selectedTripId);
+		var now = new Date();
+		var date = now.toString();
 		var newReview = {
-			date: Date.now(),
+			date: date,
 			text: $(".review-entry").val(),
 			title: "Title"
 		};
-		console.log(tripRef.child("reviews").push(newReview));
+		console.log("newReview :", newReview);
 		tripRef.child("reviews").push(newReview);
 	});
 });

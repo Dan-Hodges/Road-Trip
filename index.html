@@ -14,9 +14,8 @@
   <nav class="navbar navbar-default navbar-fixed-top"><!--////Nav Section////-->
     <div class="container">
       <ul class="nav nav-pills">
-        <li role="presentation"><a href="index.html">View Music</a></li>
-        <li role="presentation"><a href="add.html">Add Music</a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><button id="visitedBtn" href="">Visited</button></li>
+        <li role="presentation"><button id="wishBtn" href="">Wish List</button></li>
 	      <form class="navbar-form navbar-left" role="search">
 	      <div class="form-group">
 	        <input type="text" class="form-control" placeholder="Search">
@@ -58,12 +57,7 @@
   <!--/////Form Field Close/////-->
 
   <div id="list-of-trips"></div>
-    <div class="review-container">
-	    <div class="input-group input-group-lg"> 
-		     <textarea class="review-entry" class="form-control" rows="3" placeholder="review"></textarea>
-		     <button type="button" id="save-review">Save Review</button> 
-		  </div>
-		</div>     
+    
 	</div>
 
   <script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script> 

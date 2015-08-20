@@ -14,8 +14,8 @@ requirejs.config({
   }
 });
 
-requirejs(["dependencies", "load-data", "save-data", "reviews"],
-  function(dependencies, loadData, saveData, reviews) {
+requirejs(["dependencies", "load-data", "save-data", "reviews", "visited", "wish_list"],
+  function(dependencies, loadData, saveData, reviews, visited, wish_list) {
     $(".review-entry").css({ display: "block" });
   }
 );  

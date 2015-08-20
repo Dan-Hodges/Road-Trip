@@ -18,7 +18,7 @@ define(function(require){
   myFirebseRef.child("trips").on("value", function(snapshot){
   	var trips = snapshot.val();
 
-  	//console.log("trips :", trips);
+  	// console.log("trips :", trips);
   	var populatedTemplate = templates.tripTpl(trips);
   	// console.log("populatedTemplate :", populatedTemplate);
   	$('#list-of-trips').html(populatedTemplate);
